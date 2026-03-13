@@ -1,3 +1,100 @@
 {% load static %}
-<h1>Welcome to Our Site <span class="badge bg-success rounded-pill fs-6">#1 ke kenya cares</span></h1>
-<img src ="{% static '/svgs/undraw_progressive-web-app_c4uq.svg' %}" alt="hero image" class="img-fluid rounded-3">
+<link rel="stylesheet" href="{% static 'css/hero.css' %}">
+
+
+<Section class="heroSection">
+ <span class="badge bg-success rounded-pill fs-6 badge-hero">#ke Kenya's #1Children'shome Network</span>
+<div class="contentSection">
+    <h1 class="fs-2 fw-bold">Connecting children's Homes<br> <span>Across Kenya</span> </h1>
+    <P>A platform where donors,volunteers and visitors unite to support orphaned and vulnerable children in homes across all 47 counties of kenya</P>
+</div>
+
+<!-- Search Box Section -->
+<div class="searchSection mt-5 mb-5">
+    <p class="text-muted mb-3">Search children's homes by name or location</p>
+    <div class="d-flex gap-2 flex-wrap search-container">
+        <!-- Name/Location Search Input -->
+        <input type="text" class="form-control search-input" placeholder="Enter name or location">
+        
+        <!-- Counties Dropdown -->
+        <select class="form-select search-select">
+            <option selected>All Counties</option>
+            <option value="baringo">Baringo</option>
+            <option value="bomet">Bomet</option>
+            <option value="bungoma">Bungoma</option>
+            <option value="busia">Busia</option>
+            <option value="embu">Embu</option>
+            <option value="garissa">Garissa</option>
+            <option value="homabay">Homa Bay</option>
+            <option value="isiolo">Isiolo</option>
+            <option value="kajiado">Kajiado</option>
+            <option value="kakamega">Kakamega</option>
+            <option value="kericho">Kericho</option>
+            <option value="kisii">Kisii</option>
+            <option value="kisumu">Kisumu</option>
+            <option value="kitui">Kitui</option>
+            <option value="kwale">Kwale</option>
+            <option value="laikipia">Laikipia</option>
+            <option value="lamu">Lamu</option>
+            <option value="machakos">Machakos</option>
+            <option value="makueni">Makueni</option>
+            <option value="mandera">Mandera</option>
+            <option value="marsabit">Marsabit</option>
+            <option value="meru">Meru</option>
+            <option value="migori">Migori</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="murang'a">Murang'a</option>
+            <option value="nairobi">Nairobi</option>
+            <option value="nakuru">Nakuru</option>
+            <option value="nandi">Nandi</option>
+            <option value="narok">Narok</option>
+            <option value="nyamira">Nyamira</option>
+            <option value="nyandarua">Nyandarua</option>
+            <option value="nyeri">Nyeri</option>
+            <option value="samburu">Samburu</option>
+            <option value="siaya">Siaya</option>
+            <option value="taitataveta">Taita Taveta</option>
+            <option value="tanariver">Tana River</option>
+            <option value="tharakanithi">Tharaka Nithi</option>
+            <option value="transnzoia">Trans Nzoia</option>
+            <option value="turkana">Turkana</option>
+            <option value="uasingishu">Uasin Gishu</option>
+            <option value="vihiga">Vihiga</option>
+            <option value="wajir">Wajir</option>
+            <option value="westpokot">West Pokot</option>
+            <option value="elgeyo">Elgeyo-Marakwet</option>
+            <option value="kiambu">Kiambu</option>
+            <option value="kirinyaga">Kirinyaga</option>
+        </select>
+        
+        <!-- Search Button -->
+        <button class="btn btn-success rounded-3 px-4 search-button">Search</button>
+    </div>
+</div>
+
+ <a href="{% url 'Donations' %}"><button type="button" class="btn btn-danger btn-lg">Donate</button></a>
+<a href="{% url 'Bookings' %}"><button type="button" class="btn btn-light btn-lg">Book A Home</button></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Section>

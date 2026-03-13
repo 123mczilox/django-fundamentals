@@ -20,17 +20,20 @@ def home(request):
     return render(request, 'main.html', context)
 
 
-def about(request):
+def find_homes(request):
     context = {"data": "Learn more about Galleon Technologies"}
-    return render(request, 'firstApp/about.html', context)
-
-def contacts(request):
-    context = {"data": "Feel free to contact us"}
-    return render(request, 'firstApp/contacts.html', context)
+    return render(request, 'firstApp/find_homes.html', context)
 
 def bookings(request):
     context = {"data": "Manage your bookings"}
     return render(request, 'firstApp/bookings.html', context)
+def events(request):
+    context = {"data": "Explore our events"}
+    return render(request, 'firstApp/events.html', context)
+
+def donations(request):
+    context = {"data": "Support our cause"}
+    return render(request, 'firstApp/donations.html', context)
 
 def homed(request):
     context = {"data": "Welcome to your dashboard"}

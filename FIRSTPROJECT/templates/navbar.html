@@ -13,13 +13,16 @@
           <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="{% url 'about' %}">Find homes</a>
+          <a class="nav-link " href="{% url 'find_homes' %}">Find homes</a>
+        </li>
+              <li class="nav-item">
+          <a class="nav-link" href="{% url 'Bookings' %}">Book a visit</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'contacts' %}">Donations</a>
+          <a class="nav-link" href="{% url 'events' %}">Events wall</a>
         </li>
              <li class="nav-item bg-danger rounded-3">
-          <a class="nav-link" href="{% url 'bookings' %}">Bookings</a>
+          <a class="nav-link" href="{% url 'Donations' %}">Donate</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
