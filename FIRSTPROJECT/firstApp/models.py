@@ -1,7 +1,6 @@
 from django.db import models
 
-# Create your models here.
-class student(models.Model):
+class Student(models.Model):
     name = models.CharField(max_length=100)
     dob = models.DateField()
     age = models.IntegerField()
@@ -11,11 +10,16 @@ class student(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.name
 
-    
-class hobby(models.Model):
+
+class Hobby(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    requiremets = models.TextField()
+    requirements = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
