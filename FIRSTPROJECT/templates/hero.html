@@ -2,17 +2,18 @@
 <link rel="stylesheet" href="{% static 'css/hero.css' %}">
 
 
-<Section class="heroSection">
+<Section class="heroSection" id ="heroSection">
  <span class="badge bg-success rounded-pill fs-6 badge-hero">#ke Kenya's #1Children'shome Network</span>
 <div class="contentSection">
-    <h1 class="fs-2 fw-bold">Connecting children's Homes<br> <span>Across Kenya</span> </h1>
+    <h1 class="fs-2 fw-bold ">Connecting children's Homes<br> <span style="color: #125204;">Across Kenya</span> </h1>
     <P>A platform where donors,volunteers and visitors unite to support orphaned and vulnerable children in homes across all 47 counties of kenya</P>
 </div>
 
 <!-- Search Box Section -->
+<div class="searchBar">
 <div class="searchSection mt-5 mb-5">
-    <p class="text-muted mb-3">Search children's homes by name or location</p>
-    <div class="d-flex gap-2 flex-wrap search-container">
+    <p class=" fs-5 ">Search children's homes by name or location</p>
+    <div class="search-container">
         <!-- Name/Location Search Input -->
         <input type="text" class="form-control search-input" placeholder="Enter name or location">
         
@@ -71,6 +72,8 @@
         <button class="btn btn-success rounded-3 px-4 search-button">Search</button>
     </div>
 </div>
+</div>
+
 
  <a href="{% url 'Donations' %}"><button type="button" class="btn btn-danger btn-lg">Donate</button></a>
 <a href="{% url 'Bookings' %}"><button type="button" class="btn btn-light btn-lg">Book A Home</button></a>
@@ -124,6 +127,8 @@
 </div>
 
 </Section>
+
+ 
 <section class="urgentNeeds" id="urgent-needs">
   <div class =" align-items-center mb-4">
     <h1>Homes That Need Help Now</h1>

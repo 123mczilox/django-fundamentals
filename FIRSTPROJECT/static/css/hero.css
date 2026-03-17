@@ -1,23 +1,100 @@
 /* Hero Section - Background Image Only */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c4cdd6; /* light gray background */
+}
+
+.heroSection> .badge-hero {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left:12px;
+    top: 20px; left: 20px;
+    background-color: rgba(28, 93, 63, 0.8); /* dark green with opacity */
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.contentSection>h1 {
+    max-width: 700px;
+    /* margin: 0 auto; */
+    text-align:left;
+    color: #fff;
+    margin-left: 12px;
+    font-weight: bold;
+    font-size:90px;
+    
+}
+
+.contentSection>p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align:left;
+    color: #fff;
+    margin-left: 12px;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+.searchBar {
+    background-color: #2f3133; /* light gray background */
+    border-radius:15px;
+    max-width: 800px;
+    width: 100%;
+    padding:0px auto;
+
+
+
+}
+.searchSection>p{
+    color: #fff;
+    text-align:left;
+    font-size: large;
+    padding-top: 24px;
+    margin-left: 12px;
+    padding-bottom:0px;
+
+}
+
+.searchSection>div {
+  
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin:auto;
+    margin-left: 12px;
+    gap: 10px;
+    max-width: 700px;
+    padding-bottom: 24px;
+}
+
 .heroSection {
     min-height: 700px;
     background: url('../images/image.png') no-repeat center center;
     background-size: cover;
     width: 100%;
+    height:90vh;
+ 
 }
-.hero-section {
+
+
+
+
+ .hero-section {
     position: relative;
     background-size: cover;
     background-position: center;
-    padding: 120px 0;
-    color: white;
+    padding: 120px 12px;
+    color: rgb(175, 164, 164);
 }
 
 .hero-section .overlay {
     position: absolute;
-    top: 0; left: 0;
+    top: 12px; left: 25px;
     width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.4); /* optional for dark overlay */
+    background-color: rgba(192, 129, 129, 0.4); 
 }
 
 .hero-content {
@@ -27,7 +104,7 @@
     margin: 0 auto;
 }
 
-.search-box {
+/* .search-box {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -37,7 +114,7 @@
 .search-box input, .search-box select {
     padding: 12px 15px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #ac8f8f;
     font-size: 16px;
 }
 
@@ -45,10 +122,10 @@
     padding: 12px 20px;
     border: none;
     background-color: #1c5d3f; /* dark green */
-    color: white;
+    /* color: rgb(110, 86, 86);
     border-radius: 8px;
-    cursor: pointer;
-}
+    cursor: pointer; */
+/* }
 
 .search-box button:hover {
     background-color: #15432d;
@@ -59,18 +136,18 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-}
+} */ 
 
-.cta-buttons button {
+/* .cta-buttons button {
     padding: 12px 25px;
     border-radius: 8px;
     border: none;
     font-weight: 600;
     cursor: pointer;
-}
-
-.donate-btn { background-color: #e63946; color: white; }
-.book-btn { background-color: white; color: #1c5d3f; border: 1px solid #1c5d3f; }
-.register-btn { background-color: #000; color: white; }
+} */
+/* 
+.donate-btn { background-color: #e63946; color: rgb(185, 138, 138); }
+.book-btn { background-color: rgb(177, 158, 158); color: #1c5d3f; border: 1px solid #1c5d3f; }
+.register-btn { background-color: #000; color: white; } */ 
 
 
