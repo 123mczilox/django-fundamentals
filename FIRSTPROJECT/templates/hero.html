@@ -1,7 +1,4 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/hero.css' %}">
-
-
 <Section class="heroSection" id ="heroSection">
  <span class="badge bg-success rounded-pill fs-6 badge-hero">#ke Kenya's #1Children'shome Network</span>
 <div class="contentSection">
@@ -11,8 +8,10 @@
 
 <!-- Search Box Section -->
 <div class="searchBar">
+  
 <div class="searchSection mt-5 mb-5">
-    <p class=" fs-5 ">Search children's homes by name or location</p>
+  
+    <p class=" fs-5 "><i class="fa-brands fa-searchengin"></i>Search children's homes by name or location</p>
     <div class="search-container">
         <!-- Name/Location Search Input -->
         <input type="text" class="form-control search-input" placeholder="Enter name or location">
@@ -74,13 +73,13 @@
 </div>
 </div>
 
+<div class="buttonPart">
+<a href="{% url 'Donations' %}"><button type="button" class="btn btn-danger btn-lg"><i class="fa-solid fa-hand-holding-heart fa-xs pe-3" style="color: #350303;"></i>Donate</button></a>
+<a href="{% url 'Bookings' %}"><button type="button" class="btn btn-light btn-lg"><i class="fa-regular fa-calendar" style="color: rgb(0, 0, 0);"></i>Book A Home</button></a>
+</div>
 
- <a href="{% url 'Donations' %}"><button type="button" class="btn btn-danger btn-lg">Donate</button></a>
-<a href="{% url 'Bookings' %}"><button type="button" class="btn btn-light btn-lg">Book A Home</button></a>
 
-<div class=" container-fluid cardStats d-flex gap-4 mt-5">
-
-
+<div   class="cardStats d-flex justify-content-center align-items-center gap-3 mt-4 mb-4 row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 cardStats ">
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">3,870</h5>
@@ -120,24 +119,21 @@
     <!-- <a href="#" class="card-link">Another link</a> -->
   </div>
 </div>
-
-
-
-
 </div>
+</Section>
 
 </Section>
 
  
-<section class="urgentNeeds" id="urgent-needs">
+<Section class="urgentNeeds" id="urgent-needs">
   <div class =" align-items-center mb-4">
     <h1>Homes That Need Help Now</h1>
     <P>These homes have critical shortages.Your support can make an immediate difference.</P>
   </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class=" imageCards row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
-    <div class="card">
-      <img src="\static\images\pexels-freestockpro-12932614.jpg" class="card-img-top" alt="this is a picture of school stationaries" height="300px" width="500px">
+    <div class="cards">
+      <img src="\static\images\pexels-freestockpro-12932614.jpg" class="card-img-top" alt="this is a picture of school stationaries">
       <div class="card-body">
         <h5 class="card-title">JoyfulHearts Children's Home</h5>
         <h6>Nakuru</h6>
@@ -148,8 +144,8 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
-      <img src="\static\images\pexels-samandgos-709567.jpg" class="card-img-top" alt="this is a picture of local fruits and vegetables" height="300px" width="500px">
+    <div class="cards">
+      <img src="\static\images\pexels-samandgos-709567.jpg" class="card-img-top" alt="this is a picture of local fruits and vegetables">
       <div class="card-body">
         <h5 class="card-title">Mama Upendo Orphanage</h5>
         <h6>Mombasa</h6>
@@ -159,8 +155,8 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
-      <img src="\static\images\pexels-nati-87264186-14642652.jpg" class="card-img-top" alt="this is a picture of blankets" height="300px" width="500px">
+    <div class="cards">
+      <img src="\static\images\pexels-nati-87264186-14642652.jpg" class="card-img-top" alt="this is a picture of blankets" >
       <div class="card-body">
         <h5 class="card-title">Neema House Nyandarua</h5>
         <h6>Nyandarua</h6>
@@ -170,8 +166,8 @@
     </div>
   </div>
   <div class="col">
-    <div class="card">
-      <img src="\static\images\pexels-cottonbro-6157209.jpg" class="card-img-top" alt="this is a picture of a bed" height="300px" width="500px">
+    <div class="cards">
+      <img src="\static\images\pexels-cottonbro-6157209.jpg" class="card-img-top" alt="this is a picture of a bed" >
       <div class="card-body">
         <h5 class="card-title">Amani Children's shelter</h5>
         <h6>Machakos</h6>
@@ -181,22 +177,22 @@
     </div>
   </div>
 </div>
-</section>
+</Section>
 
-<section class ="featuredHomes" id ="featured-homes">
+<Section class ="featuredHomes" id ="featured-homes">
 <div class =" mb-4">
     <h6>FEATURED HOMES</h6>
     <h2>Children's Homes Near You</h2>
     <p>Explore Varified Homes across Kenya's counties.</p>
    
-
-<div class="container my-5 border rounded-3 p-4">
+<div class="featuredCards">
+<div class="  container my-5  rounded-3 p-4">
 
 <div class="home-card">
 
 <div class="card-image">
 
-<img src="{% static 'images/image.png' %}" alt="children home" height="720px" width="1080px">
+<img src="{% static 'images/image.png' %}" alt="children home">
 
 <span class="badge critical">Critical Need</span>
 <span class="badge verified">✔ Verified</span>
@@ -246,7 +242,7 @@ Joyful Hearts Children's Home
 </div>
 
 
-<div class="container my-5 border rounded-3 p-4">
+<div class="container my-5  rounded-3 p-4">
 
 <div class="home-card">
 
@@ -304,7 +300,7 @@ Tumaini Wa kesho Home
 
 
 
-<div class="container my-5 border rounded-3 p-4">
+<div class="container my-5  rounded-3 p-4">
 
 <div class="home-card">
 
@@ -359,7 +355,7 @@ Mama Upendo Orphanage
 
 
 
-<div class="container my-5 border rounded-3 p-4">
+<div class="container my-5  rounded-3 p-4">
 
 <div class="home-card">
 
@@ -413,17 +409,18 @@ Baraka Children's Village
 </div>
 
 </div>
-</section>
+</div>
+</Section>
 
 
 
-<section class ="Workings" id="workings">
+<Section class ="Workings" id="workings">
   <div class  ="text-center mb-4">
     <h1>How HomeCare Kenya Works</h1>
     <P>We make it simple and transparent for everyone to get involved and make a diffrence.</P>
   </div>
 
-  <div class="row">
+  <div class=" infoBox row">
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card">
       <div class="card-body">
@@ -455,9 +452,10 @@ Baraka Children's Village
   </div>
 </div>
 
-</section>
 
-<section class="community" id="community">
+</Section>
+
+<Section class="community" id="community">
   <div class ="text-center mb-4">
     <h5>COMMUNITY</h5>
     <h2>Building a Nation that Cares</h2>
@@ -538,9 +536,9 @@ Baraka Children's Village
 
 </div>
 </div>
-</section>
+</Section>
 
-<section class="submision" id ="submision">
+<Section class="submision" id ="submision">
 <div class="text-center">
   <h1>Ready to make a Difference</h1>
   <p>Whether you Donate,volunteer,or simply Visit -- your involvement chnages a child's life forever</p>
@@ -552,4 +550,4 @@ Baraka Children's Village
 
 </div>
 
-</section>
+</Section>
