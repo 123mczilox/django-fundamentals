@@ -1,24 +1,36 @@
 {% load static %}
-<Section class="heroSection" id ="heroSection">
- <span class="badge bg-success rounded-pill fs-6 badge-hero">#ke Kenya's #1Children'shome Network</span>
-<div class="contentSection">
-    <h1 class="fs-2 fw-bold ">Connecting children's Homes<br> <span style="color: #125204;">Across Kenya</span> </h1>
-    <P>A platform where donors,volunteers and visitors unite to support orphaned and vulnerable children in homes across all 47 counties of kenya</P>
-</div>
+<Section class="heroSection position-relative" id ="heroSection">
+  <div class="hero-overlay"></div>
+  
+  <div class="container position-reltive z-1 py-5">
+    <span class="badge bg-success rounded-pill px-3 py-2 mb-4 fs-6">#ke Kenya's #1Children'shome Network</span>
+    <div class="row mb-4 pt-4">
+      
+  <div class="col-lg-8 text-start ">
+ 
+
+<h1 class="display-4 fw-bold text-white mb-3">
+    Connecting children's Homes<br> 
+    <span style="color: #125204;">Across Kenya</span> 
+  </h1>
+
+    <P class="lead text-white-50 mb-5">A platform where donors,volunteers and visitors unite to support orphaned and vulnerable children in homes across all 47 counties of kenya
+
+    </P>
+    </div>
+    </div>
+
+
 
 <!-- Search Box Section -->
-
-<div class="searchBar">
-  
-<div class="searchSection mt-5 mb-5">
-  
-    <p class=" fs-5 "><i class="fa-brands fa-searchengin"></i>Search children's homes by name or location</p>
-    <div class="search-container">
+<div class="search-wrapper bg-white p-4 rounded-4 shadow-lg mb-5" style="max-width: 850px;">
+    <p class=" fs-6 text-muted mb-3 fw-bold "><i class="fa-brands fa-searchengin me-2"></i>Search children's homes by name or location</p>
+    <div class="d-flex flex-column flex-md-row gap-3">
         <!-- Name/Location Search Input -->
-        <input type="text" class="form-control search-input" placeholder="Enter name or location">
+        <input type="text" class="form-control form-control-lg border-0 bg-light " placeholder="Enter name or location">
         
         <!-- Counties Dropdown -->
-        <select class="form-select search-select">
+        <select class="form-select form-select-lg border-0 bg-light w-auto">
             <option selected>All Counties</option>
             <option value="baringo">Baringo</option>
             <option value="bomet">Bomet</option>
@@ -69,123 +81,159 @@
         </select>
         
         <!-- Search Button -->
-        <button class="btn btn-success rounded-3 px-4 search-button">Search</button>
+        <button class="btn btn-success btn-lg px-5 fw-bold rounded-3">Search</button>
     </div>
 </div>
-</div>
-
-<div class="buttonPart">
-<a href="{% url 'Donations' %}"><button type="button" class="btn btn-danger btn-lg"><i class="fa-solid fa-hand-holding-heart fa-xs pe-3" style="color: #350303;"></i>Donate</button></a>
-<a href="{% url 'Bookings' %}"><button type="button" class="btn btn-light btn-lg"><i class="fa-regular fa-calendar" style="color: rgb(0, 0, 0);"></i>Book A Home</button></a>
-</div>
 
 
-<div   class="cardStats d-flex justify-content-center align-items-center gap-3 mt-4 mb-4  ">
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">3,870</h5>
-    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-    <p class="card-text">Families helped.</p>
-    <!-- <a href="#" class="card-link">Discover</a> -->
-    <!-- <a href="#" class="card-link">Another link</a> -->
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">257</h5>
-    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-    <p class="card-text">Children's homes</p>
-    <!-- <a href="#" class="card-link">see more</a> -->
-    <!-- <a href="#" class="card-link">Another link</a> -->
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">8,400</h5>
-    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-    <p class="card-text">Visits booked</p>
-    <!-- <a href="#" class="card-link">learn more</a> -->
-    <!-- <a href="#" class="card-link">Another link</a> -->
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">1,400</h5>
-    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-    <p class="card-text">Children supported</p>
-    <!-- <a href="{% url 'find_homes' %}" class="card-link">learn more</a> -->
-    <!-- <a href="#" class="card-link">Another link</a> -->
-  </div>
+<div class="d-flex gap-3 ">
+<a href="{% url 'Donations' %}"><button type="button" class="btn btn-danger btn-lg px-4 shadow-sm"><i class="fa-solid fa-hand-holding-heart fa-xs pe-3" style="color: #350303;"></i>Donate</button></a>
+<a href="{% url 'Bookings' %}"><button type="button" class="btn btn-light btn-lg px-4 shadow-sm"><i class="fa-regular fa-calendar" style="color: rgb(0, 0, 0);"></i>Book A Home</button></a>
 </div>
 </div>
 </Section>
 
-</Section>
+
+<section class="stats-section py-5 bg-light" id="impactStats">
+  <div class="container">
+    <div class="row g-4 text-center justify-content-center">
+      
+      <div class="col-6 col-lg-3">
+        <div class="stat-card bg-white p-4 rounded-4 shadow-sm h-100">
+          <i class="fa-solid fa-people-roof fs-1 text-success mb-3"></i>
+          <h2 class="display-6 fw-bold text-dark mb-1">3,870</h2>
+          <p class="text-muted fw-medium mb-0">Families Helped</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-card bg-white p-4 rounded-4 shadow-sm h-100">
+          <i class="fa-solid fa-house-chimney-heart fs-1 text-success mb-3"></i>
+          <h2 class="display-6 fw-bold text-dark mb-1">257</h2>
+          <p class="text-muted fw-medium mb-0">Children's Homes</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-card bg-white p-4 rounded-4 shadow-sm h-100">
+          <i class="fa-solid fa-calendar-check fs-1 text-success mb-3"></i>
+          <h2 class="display-6 fw-bold text-dark mb-1">8,400</h2>
+          <p class="text-muted fw-medium mb-0">Visits Booked</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-card bg-white p-4 rounded-4 shadow-sm h-100">
+          <i class="fa-solid fa-child-reaching fs-1 text-success mb-3"></i>
+          <h2 class="display-6 fw-bold text-dark mb-1">1,400</h2>
+          <p class="text-muted fw-medium mb-0">Children Supported</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
  
-<Section class="urgentNeeds" id="urgent-needs">
-  <div class =" align-items-center mb-4">
-    <h1>Homes That Need Help Now</h1>
-    <P>These homes have critical shortages.Your support can make an immediate difference.</P>
+<Section class="urgentNeeds py-5 bg-white" id="urgent-needs">
+  <div class =" container my-5 ">
+    <div class="text-center mb-5">
+      <span class="text-danger fw-bold text-uppercase tracking-wide">Critical Shortages</span>
+    <h2 class="display-6 fw-bold mb-3 mt-2">Homes That Need Help Now</h1>
+    <P class="lead text-muted mx-auto" style="max-width: 600px;">These homes have critical shortages.Your support can make an immediate difference.</P>
   </div>
-    <div class=" imageCards ">
-  <div class=" cardz ">
-    <div class="cards">
-      <img src="\static\images\pexels-freestockpro-12932614.jpg" class="card-img-top" alt="this is a picture of school stationaries">
-      <div class="card-body">
-        <h5 class="card-title">JoyfulHearts Children's Home</h5>
-        <h6>Nakuru</h6>
-        
-    <p class="card-text">This home is need of School Uniforms $ Stationery</p>
-      <a href="{% url 'Donations' %}" class="btn btn-primary">donate to this home</a>
-</div>
+
+    <div class=" row g-4 ">
+  <div class="col-12 col-md-6 col-lg-3">
+    <div class="card h-100 border-0 shadow-sm hover-lift">
+      <div class="position-relative" style="height: 300px; overflow: hidden; width: 100%;">
+      <img src="\static\images\pexels-freestockpro-12932614.jpg" class="card-img-top need-img" alt="this is a picture of school stationaries">
+      <span class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 m-3 rounded-pill small fw-bold"><i class="fa-solid fa-bell me-1"></i> Urgent
+            </span>
+            </div>
+
+      <div class="card-body d-flex flex-column p-4">
+        <h5 class="card-title fw-bold">JoyfulHearts Children's Home</h5>
+        <p class="text-muted small mb-3"><i class="fa-solid fa-location-dot me-1"></i> Nakuru</p>
+       
+        <div class="alert alert-warning py-2 px-3 mb-4 small border-0 flex-grow-1">
+          <strong>Need:</strong> School Uniforms & Stationery
+            </div>
+      <a href="{% url 'Donations' %}" class="btn btn-outline-secondary w-100 fw-bold mt-auto rounded-3">donate to this home</a>
+     </div>
     </div>
-  </div>
-  <div class=" cardz">
-    <div class="cards">
-      <img src="\static\images\pexels-samandgos-709567.jpg" class="card-img-top" alt="this is a picture of local fruits and vegetables">
-      <div class="card-body">
-        <h5 class="card-title">Mama Upendo Orphanage</h5>
-        <h6>Mombasa</h6>
-        <p class="card-text">This home has a 3-months shortage of Food supplies.</p>
-         <a href="{% url 'Donations' %}" class="btn btn-primary">donate to this home</a>
+   </div>
+
+  <div class=" col-12 col-md-6 col-lg-3">
+    <div class="card h-100 border-0 shadow-sm hover-lift">
+      <div class="position-relative" style="height: 300px; overflow: hidden; width: 100%;">
+      <img src="\static\images\pexels-samandgos-709567.jpg" class="card-img-top need-image" alt="this is a picture of local fruits and vegetables">
+      <span class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 m-3 rounded-pill small fw-bold">
+              <i class="fa-solid fa-bell me-1"></i> Urgent
+            </span>
+          </div>
+      <div class="card-body d-flex flex-column p-4">
+        <h5 class="card-title fw-bold">Mama Upendo Orphanage</h5>
+        <p class="text-muted small mb-3"><i class="fa-solid fa-location-dot me-1"></i> Nyandarua</p>
+            <div class="alert alert-warning py-2 px-3 mb-4 small border-0 flex-grow-1">
+              <strong>Need:</strong>  3-months shortage of Food supplies.
+            </div>
+
+         <a href="{% url 'Donations' %}" class="btn btn-outline-danger w-100 fw-bold mt-auto rounded-3">donate to this home</a>
       </div>
     </div>
   </div>
-  <div class=" cardz ">
-    <div class="cards">
-      <img src="\static\images\pexels-nati-87264186-14642652.jpg" class="card-img-top" alt="this is a picture of blankets" >
-      <div class="card-body">
-        <h5 class="card-title">Neema House Nyandarua</h5>
-        <h6>Nyandarua</h6>
-        <p class="card-text">This home is need of Winter clothing $ blankets due to the cold climate of the area .</p>
-         <a href="{% url 'Donations' %}" class="btn btn-primary">donate to this home</a>
+
+  <div class="col-12  col-md-6 col-lg-3">
+  
+    <div class="card h-100 border-0 shadow-sm hover-lift">
+      <div class="position-relative"style="height: 300px; overflow: hidden; width: 100%;">
+      <img src="\static\images\pexels-nati-87264186-14642652.jpg" class="card-img-top need-img" alt="this is a picture of blankets" >
+      <span class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 m-3 rounded-pill small fw-bold">
+              <i class="fa-solid fa-bell me-1"></i> Urgent
+            </span>
+          </div>
+      <div class="card-body d-flex flex-column p-4">
+            <h5 class="card-title fw-bold">Amani Shelter</h5>
+            <p class="text-muted small mb-3"><i class="fa-solid fa-location-dot me-1"></i> Machakos</p>
+            <div class="alert alert-warning py-2 px-3 mb-4 small border-0 flex-grow-1">
+              <strong>Need:</strong> winter clothing & blankets
+            </div>
+         <a href="{% url 'Donations' %}" class="btn btn-outline-primary w-100 fw-bold mt-auto rounded-3">donate to this home</a>
       </div>
     </div>
   </div>
-  <div class=" cardz ">
-    <div class="cards">
+
+  <div class=" col-12 col-md-6 col-lg-3">
+    <div class="card h-100 border-0 shadow-sm hover-lift">
+      <div class="position-relative" style="height: 300px; overflow: hidden; width: 100%;">
       <img src="\static\images\pexels-cottonbro-6157209.jpg" class="card-img-top" alt="this is a picture of a bed" >
-      <div class="card-body">
+      <span class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 m-3 rounded-pill small fw-bold">
+              <i class="fa-solid fa-bell me-1"></i> Urgent
+            </span>
+          </div>
+      <div class="card-body d-flex flex-column p-4">
         <h5 class="card-title">Amani Children's shelter</h5>
-        <h6>Machakos</h6>
-        <p class="card-text">This home is in need of Beds $ Mattresses.</p>
-         <a href="{% url 'Donations' %}" class="btn btn-primary">donate to this home</a>
+      <p class="text-muted small mb-3"><i class="fa-solid fa-location-dot me-1"></i> Nyandarua</p>
+            <div class="alert alert-warning py-2 px-3 mb-4 small border-0 flex-grow-1">
+              <strong>Need:</strong> Beds & Mattresses
+            </div>
+
+         <a href="{% url 'Donations' %}" class="btn btn-outline-success w-100 fw-bold mt-auto rounded-3">donate to this home</a>
     </div>
     </div>
   </div>
-</div>
+</div> 
+</div> 
 </Section>
 
 <Section class ="featuredHomes" id ="featured-homes">
-<div class =" mb-4">
+<div class =" details mb-4">
     <h6>FEATURED HOMES</h6>
     <h2>Children's Homes Near You</h2>
     <p>Explore Varified Homes across Kenya's counties.</p>
-   
+  </div> 
 <div class="featuredCards">
 <div class="  container my-5  rounded-3 p-4">
 
@@ -410,152 +458,198 @@ Baraka Children's Village
 </div>
 
 </div>
-</div>
-</Section>
-
-
-
-<Section class ="Workings" id="workings">
-  <div class  ="text-center mb-4">
-    <h1>How HomeCare Kenya Works</h1>
-    <P>We make it simple and transparent for everyone to get involved and make a diffrence.</P>
-  </div>
-
-  <div class=" infoBox row">
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-        <i class="fa-solid fa-magnifying-glass fa-beat fs-4 justify-content-center display-flex align-items-center" style="color: rgb(139, 213, 182);"></i>
-        <div class="text-5xl font-black text-gray-100 mb-2  fs-4 justify-content-center d-flex" data-fg-dag151="1.33:1.18032:/src/app/pages/Home.tsx:266:17:13519:73:e:div:x" data-fgid-dag151=":rbu:">01</div>
-        <h5 class="card-title">Find a Home</h5>
-        <p class="card-text">Browse our directory of verified children's homes across all 47 Kenyan counties.Filtered by location or specific needs.</p>
-    
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <i class="fa-solid fa-circle-dollar-to-slot fa-beat fs-4" style="color: rgb(139, 213, 182); justify-content: center; align-items: center; display: flex;"></i>
-    
-        <div class="text-5xl font-black text-gray-100 mb-2  fs-4 justify-content-center d-flex" data-fg-dag151="1.33:1.18032:/src/app/pages/Home.tsx:266:17:13519:73:e:div:x" data-fgid-dag151=":rbu:">02</div>
-        <h5 class="card-title">Choose How to Help</h5>
-        <p class="card-text">Donate money, contribute items, volunteer your time or book a visit to personally connect with the children.</p>
-
-      </div>
-    </div>
-  </div>
-
-
-<div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <i class="fa-solid fa-arrow-trend-up fa-beat fs-4" style="color: rgb(139, 213, 182);"></i>
-        <div class="text-5xl font-black text-gray-100 mb-2 fs-4 justify-content-center d-flex" data-fg-dag151="1.33:1.18032:/src/app/pages/Home.tsx:266:17:13519:73:e:div:x" data-fgid-dag151=":rbu:">03</div>
-        <h5 class="card-title">Track your Impact</h5>
-        <p class="card-text">Recieve updates on how your support is being used,with transparent reporting from home directors.</p>
-
-      </div>
-    </div>
-  </div>
-</div>
-
 
 </Section>
 
-<Section class="community" id="community">
-  <div class =" Intro text-center mb-4">
-    <h5>COMMUNITY</h5>
-    <h2>Building a Nation that Cares</h2>
-    <p>HomeCare Kenya was born from a simple belief: every Kenyan child deserves a safe home, quality education,and a loving community.We connect the generosity of Kenyans and global supporters to make this a reality.</p>
 
+
+<Section class ="how-it-works py-5 bg-dark text-white" id="workings">
+  <div class  ="container my-5">
+    <div class="text-center mb-5">
+      <span class="text-success fw-bold text-uppercase tracking-wide">Simple Process</span>
+    <h2 class="display-6 fw-bold mb-3 mt-2 text-white ">How HomeCare Kenya Works</h2>
+    <P class="lead text-white-50 mx-auto" style="max-width: 600px;">We make it simple and transparent for everyone to get involved and make a diffrence.</P>
   </div>
-
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">31</h5>
-        <p class="card-text">Counties covered.</p>
-  
+ <div class="row g-4 mt-2">
+      <div class="col-12 col-md-4">
+        <div class="work-card h-100 p-4 text-center position-relative rounded-4">
+          <div class="step-number">01</div>
+          
+          <div class="icon-wrapper mb-4 mx-auto bg-success text-white">
+            <i class="fa-solid fa-magnifying-glass fs-3"></i>
+          </div>
+          <h4 class="fw-bold mb-3 text-white">Find a Home</h4>
+          <p class="text-white-50">Browse our directory of verified children's homes. Filter by location or specific needs.</p>
+        </div>
       </div>
+
+      <div class="col-12 col-md-4">
+        <div class="work-card h-100 p-4 text-center position-relative rounded-4">
+          <div class="step-number">02</div>
+          
+          <div class="icon-wrapper mb-4 mx-auto bg-success text-white">
+            <i class="fa-solid fa-hand-holding-heart fs-3"></i>
+          </div>
+          <h4 class="fw-bold mb-3 text-white">Choose How to Help</h4>
+          <p class="text-white-50">Donate money, contribute items, volunteer your time, or book a visit to personally connect.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="work-card h-100 p-4 text-center position-relative rounded-4">
+          <div class="step-number">03</div>
+          
+          <div class="icon-wrapper mb-4 mx-auto bg-success text-white">
+            <i class="fa-solid fa-arrow-trend-up fs-3"></i>
+          </div>
+          <h4 class="fw-bold mb-3 text-white">Track Your Impact</h4>
+          <p class="text-white-50">Receive updates on how your support is being used with transparent reporting.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </Section>
+  
+
+
+
+<Section class="community-section py-5 bg-light" id="community">
+  <div class ="container my-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-4">
+        <span class="text-success fw-bold text-uppercase tracking-wide">Our community</span>
+      <h2 class="display-5 fw-bold mt-3 mb-4">Voices of <span class="text-success">Change</span></h2>
+    <p class="text-muted mb-4 mx-auto">HomeCare Kenya was born from a simple belief: every Kenyan child deserves a safe home, quality education,and a loving community.We connect the generosity of Kenyans and global supporters to make this a reality.</p>
+
+  <div class="d-flex align-items-center mb-4">
+            <div class="avatar-group d-flex me-3">
+                <img src="\static\images\pexels-mcgzay-27719497.jpg" class="rounded-circle border border-2 border-white" width="45" alt="User">
+                <img src="\static\images\pexels-kureng-workx-2546437-13033070.jpg" class="rounded-circle border border-2 border-white ms-n3" width="45" alt="User">
+                <img src="https://i.pravatar.cc/150?u=3" class="rounded-circle border border-2 border-white ms-n3" width="45" alt="User">
+            </div>
+            <span class="small fw-bold text-dark">+500 Recent Visits</span>
+        </div>
+        <a href="#" class="btn btn-success btn-lg px-4 rounded-pill shadow-sm">Join the Community</a>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="row g-4">
+          
+          <div class="col-md-6">
+            <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="\static\images\pexels-youngafrikanna-27597387.jpg" class="rounded-circle me-3" width="50" alt="Sarah W.">
+                <div>
+                  <h6 class="mb-0 fw-bold">Sarah Wanjiku</h6>
+                  <small class="text-muted">Volunteer • Nairobi</small>
+                </div>
+              </div>
+              <p class="fst-italic text-muted">"Booking a visit through HomeCare was so seamless. Seeing the smiles at Joyful Hearts Home made my weekend unforgettable."</p>
+              <div class="text-warning mt-2">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="\static\images\pexels-mwauraken-29079409.jpg" class="rounded-circle me-3" width="50" alt="David O.">
+                <div>
+                  <h6 class="mb-0 fw-bold">David Otieno</h6>
+                  <small class="text-muted">Donor • Kisumu</small>
+                </div>
+              </div>
+              <p class="fst-italic text-muted">"I love how transparent the process is. I can see exactly what each home needs and contribute directly to their stationery fund."</p>
+              <div class="text-warning mt-2">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">247</h5>
-        <p class="card-text">Registered homes.</p>
-  
-      </div>
-    </div>
-  </div>
-
-    <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">823</h5>
-        <p class="card-text">Donors this month.</p>
-  
-      </div>
-    </div>
-  </div>
-
-    <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">156</h5>
-        <p class="card-text">Upcoming Visits.</p>
-  
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-6">
-<div class="card mb-3">
-  <img src="{% static 'images/ubunntuphotos7.jpg' %}" class="card-img-top" alt="...">
-  <div class="card-body">
-
-  </div>
-</div>
-
-<div class="card mb-3">
-  <img src="{% static 'images/ubunntuphotos6.jpg' %}" class="card-img-top" alt="...">
-  <div class="card-body">
-
-  </div>
-</div>
-
-<div class="card mb-3">
-  <img src="{% static 'images/ubunntuphotos2.jpg' %}" class="card-img-top" alt="...">
-  <div class="card-body">
-
-  </div>
-</div>
-
-
-
-<div class="card mb-3">
-  <img src="{% static 'images/ubunntuphotos3.jpg' %}" class="card-img-top" alt="...">
-  <div class="card-body">
-
-  </div>
-</div>
-
-</div>
-</div>
 </Section>
 
-<Section class="submision" id ="submision">
-<div class="text-center">
-  <h1>Ready to make a Difference</h1>
-  <p>Whether you Donate,volunteer,or simply Visit -- your involvement chnages a child's life forever</p>
-</div>
+<section class="donate-1" id="donate">
+  <div class=" bg-danger my-5 py-5">
+    <div class=" container mb-5 py-4 pt-3 justify-content-center text-center">
+      <h2 class="display-6 fw-bold text-white ">Ready to make a difference?</h2>
+      <p class="lead text-white-50 mb-4 mx-auto">Your support can transform lives. Join us in providing hope and a brighter future for children in need.</p>
+    </div>
+    <div class="d-flex gap-3 justify-content-center mx-auto mb-5">
+      <a href="{% url 'Donations' %}"><button type="button" class="btn btn-light btn-lg px-5 fw-bold rounded-pill shadow-sm"><i class="fa-solid fa-hand-holding-heart fa-xs pe-3" style="color: #350303;"></i>Donate Now</button></a>
+      <a href="{% url 'Bookings' %}"><button type="button" class="btn btn-outline-dark btn-lg px-5 fw-bold rounded-pill shadow-sm"><i class="fa-regular fa-calendar me-2" style="color: rgb(255, 255, 255);"></i>Book a Visit</button></a>
 
-<div class="d-flex">
-  <a href="{% url 'Donations' %}"><button type="button" class="btn btn-danger btn-lg">Donate</button></a>
-<a href="{% url 'Bookings' %}"><button type="button" class="btn btn-light btn-lg">Book A Home</button></a>
+  </div>
+  </div>
+</section>
 
-</div>
+<footer class="footer bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold text-success mb-4">HomeCare <span class="text-white">Kenya</span></h5>
+        <p class="text-white-50 pe-lg-5">
+          Connecting hearts to homes across all 47 counties. We are dedicated to bringing transparency and ease to the way Kenyans support children's homes.
+        </p>
+        <div class="social-links d-flex gap-3 mt-4">
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
 
-</Section>
+      <div class="col-lg-2 col-md-6">
+        <h6 class="fw-bold mb-4 text-uppercase tracking-wide">Explore</h6>
+        <ul class="list-unstyled footer-links">
+          <li class="mb-2"><a href="#urgent-needs" class="text-white-50 text-decoration-none">Urgent Needs</a></li>
+          <li class="mb-2"><a href="#workings" class="text-white-50 text-decoration-none">How it Works</a></li>
+          <li class="mb-2"><a href="#community" class="text-white-50 text-decoration-none">Community</a></li>
+          <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Verified Homes</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h6 class="fw-bold mb-4 text-uppercase tracking-wide">Support</h6>
+        <ul class="list-unstyled footer-links">
+          <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Donate Items</a></li>
+          <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Volunteer</a></li>
+          <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Partner With Us</a></li>
+          <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <h6 class="fw-bold mb-4 text-uppercase tracking-wide">Stay Updated</h6>
+        <p class="small text-white-50">Get monthly impact reports and urgent alerts directly in your inbox.</p>
+        <form class="input-group mb-3 mt-3">
+          <input type="email" class="form-control bg-dark border-secondary text-white shadow-none" placeholder="Email Address">
+          <button class="btn btn-success" type="button">Join</button>
+        </form>
+        <p class="small text-white-50"><i class="fa-solid fa-envelope me-2 text-success"></i> support@homecarekenya.org</p>
+      </div>
+
+    </div>
+
+    <hr class="mt-5 mb-4 border-secondary opacity-25">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="small text-white-50 mb-0">&copy; 2026 HomeCare Kenya. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <ul class="list-inline mb-0 small">
+          <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

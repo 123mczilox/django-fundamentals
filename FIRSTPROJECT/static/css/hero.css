@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-family: "Roboto Serif", serif;
     background-color: hsl(0, 0%, 100%); /* light gray background */
     padding-top:68px;
 }
@@ -11,311 +11,72 @@ body {
     margin-bottom: auto;
 }
 
-.heroSection> .badge-hero {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left:12px;
-    top: 20px; left: 20px;
-    background-color: rgba(28, 93, 63, 0.8); /* dark green with opacity */
-    color: #fff;
-    padding: 8px 15px;
-    font-size: 14px;
-    font-weight: 600;
-}
-.contentSection>h1 {
-    max-width: 700px;
-    /* margin: 0 auto; */
-    text-align:left;
-    color: #fff;
-    margin-left: 12px;
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-left: 12px;
-    
-}
-
-.contentSection>p {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align:left;
-    color: #fff;
-    margin-left: 24px;
-    font-size: large;
-    margin-top: 10px;
-    margin-bottom: 12px;
-}
-.searchBar {
-    background-color: #32332f; /* light gray background */
-    border-radius:15px;
-    max-width: 800px;
-    width: 100%;
-  
-    margin-left:15px;
-
-
-
-}
-.searchSection>p{
-    color: #fff;
-    text-align:left;
-    font-size: large;
-    padding-top: 24px;
-    margin-left: 12px;
-    padding-bottom:0px;
-
-}
-
-.searchSection>div {
-  
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    margin:auto;
-    margin-left: 12px;
-    gap: 10px;
-    max-width: 700px;
-    padding-bottom: 24px;
-}
-
 .heroSection {
-    min-height: 500px;
+    min-height: 90vh;
     background: url('../images/image.png') no-repeat center center;
     background-size: cover;
-
-    width: 100%;
-    height:120vh;
-    margin: 0;
+display:flex;
+  
+    align-items: center;
     
- 
 }
-
-
-
-
- .hero-section {
+.badge{
+    margin-bottom: 24px;
+}
+.search-wrapper {
     position: relative;
-    background-size: cover;
-    background-position: center;
-    padding: 120px 12px;
-    color: rgb(175, 164, 164);
+    z-index: 2;
+}
+.search-wrapper .form-control,
+.search-wrapper .form-select {
+    background-color: #d5dbe2 !important;
 }
 
-.hero-section .overlay {
-    position: absolute;
-    top: 12px; left: 25px;
-    width: 100%; height: 100%;
-    background-color: rgba(192, 129, 129, 0.4); 
+.search-wrapper .form-control:focus,
+.search-wrapper .form-select:focus {
+    box-shadow: none;
+    border: 1px solid #198754;
 }
 
-.hero-content {
+/* --- IMPACT STATS SECTION --- */
+.stats-section {
     position: relative;
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
-.buttonPart {
-  gap:20px;
-    display:flex;
-    margin-left: 20px;
-    transition: all 0.3s ease;
-     
-    
-    
+    z-index: 5;
+    /* Optional: This pulls the stats slightly up so they overlap the bottom of the hero image */
+    margin-top: -60px; 
 }
 
-.cardStats{
-    display:flex;
-    gap:20px;
-  
-  
-    
+.stat-card {
+    border: 1px solid rgba(0,0,0,0.03); /* Extremely soft border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-@media (min-width: 768px) {
-  .cardStats {
-    /* Creates 3 equal columns */
-    grid-template-columns: repeat(3, 1fr); 
-    
-    /* Optional: Center items within their cells */
-    justify-items: center; 
-    align-items: center;
-  }
+
+/* Hover effect to make it feel interactive */
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* Ensure the icons look crisp and have a consistent color */
+.stat-card i {
+    opacity: 0.8;
 }
 
 
-/* CARD STATS CONTAINER */
-.cardStats .card {
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    cursor: pointer;
 
-}
-
-/* HOVER EFFECT */
-.cardStats .card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-/* CARD TITLE */
-.cardStats .card-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #125204;
-    transition: color 0.3s ease;
-}
-
-/* CHANGE NUMBER COLOR ON HOVER */
-.cardStats .card:hover .card-title {
-    color: #28a745;
-}
-
-/* CARD TEXT */
-.cardStats .card-text {
-    color: #666;
-    padding:0px;
-    margin: 0%;
-    font-size: larger;
-}
-
-
-#urgent-needs{
-    height: 1800px;
-    padding-top:5%;
-    /* height: 90vh; */
-    min-height:500px;
-
-}
-.urgentNeeds {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.urgentNeeds>div>h1{
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    margin-top: 15px;
-    display: flex;
-    font-size:35px;
-    font-weight: bolder;
-    text-decoration:none;
-
-    
-}
-.urgentNeeds>div>p{
-    justify-content: center;
-    align-items: center;
-    margin-left:12px;
-    display: flex;
-    font-size: 18px;
-    color: rgb(30, 30, 31);
-}
-
-.imageCards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  /* justify-content: center; */
-  
-}
-@media (min-width: 720px) {
-  .imageCards {grid-template-columns: repeat(2, 1fr);
-    /* display: grid; */
-  }
-  @media (min-width: 1024px) {
-  .imageCards { grid-template-columns: repeat(4, 1fr); }
-}
-}
-.cards {
-    display: grid;
-    flex-direction: column;
-     max-width: 350px;
-     width: 100%;
-
-  border: none;
-  border-radius: 18px;
-  overflow: hidden;
-  background: #fff;
-  transition: all 0.3s ease;
-  height: 100%;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
-
-.cards:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-
-/* Image styling */
-.cards img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.cards:hover img {
-  transform: scale(1.08);
-}
-
-/* Body styling */
-.card-body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 10px;
-}
-
-/* Title */
-.card-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #333;
-}
-
-/* Location */
-.card-body h6 {
-  color: gray;
-  font-size: 0.9rem;
-}
-
-/* Text */
-.card-text {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #666;
-  flex-grow: 1;
-  margin-bottom: 15px;
-}
-
-/* Button */
-.cards .btn {
-  width: 100%;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-  border: none;
-  transition: 0.3s ease;
-}
-
-.cards .btn:hover {
-  background: linear-gradient(135deg, #0056b3, #0099cc);
-}
 
 
 
 
 
  #featured-homes{
-    margin-top: 20%;
+  
     height: 20%;
     
  }
-.featuredHomes>div>h6,h2,p{
-    justify-content: left;
-    display: flex;
+.details{
+
+   flex-direction: row;
     align-items: center;
     margin-left: 24px;
    
@@ -398,33 +159,128 @@ body {
 }
 
 
-#workings{
-    height: 90vh;
-
+/* --- HOW IT WORKS SECTION --- */
+.how-it-works {
+    background-color: #1a1d20 !important; /* Deep, premium dark grey */
+    position: relative;
+    overflow: hidden;
 }
-.Workings>h1,p{
-    justify-content: center;
-    align-items: center;
+
+/* The Glassmorphism Card Style */
+.work-card {
+    background: rgba(255, 255, 255, 0.03); /* Barely visible white background */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Subtle border */
+    transition: transform 0.3s ease, background 0.3s ease;
+    overflow: hidden; /* Keeps the big numbers inside the card */
+    z-index: 2;
+}
+
+.work-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.06); /* Slightly brighter on hover */
+}
+
+/* Floating Circular Icon */
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(25, 135, 84, 0.2); /* Soft green glow effect */
+    transition: transform 0.3s ease;
 }
 
-.infoBox{
+.work-card:hover .icon-wrapper {
+    transform: scale(1.1); /* Icon pops up slightly when hovering over the card */
+}
+
+/* Watermark Step Number Typography */
+.step-number {
+    position: relative;
+    top: -15px;
+    right: -10px;
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.02); /* Extremely faint */
+    z-index: -1;
+    line-height: 1;
+    user-select: none; /* Prevents users from highlighting it */
+}
+
+/* --- COMMUNITY SECTION --- */
+.community-section {
+    background-color: #f8f9fa;
+}
+
+/* Overlapping Avatars Effect */
+.avatar-group img {
+    margin-left: -12px; /* Pulls the images over each other */
+    transition: transform 0.2s;
+}
+
+.avatar-group img:first-child {
+    margin-left: 0;
+}
+
+.avatar-group img:hover {
+    transform: translateY(-5px);
+    z-index: 10;
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: #198754; /* Changes border to green on hover */
+    transform: scale(1.02);
+}
+
+.ms-n3 {
+    margin-left: -1rem !important; /* Helper for the overlapping avatars */
+}
+
+
+/* --- FOOTER STYLING --- */
+.footer {
+    background-color: #111315 !important; /* Slightly darker than the "How it Works" section */
+}
+
+.footer-links a {
+    transition: all 0.3s ease;
+}
+
+/* Hover effect: link turns green and slides 5px to the right */
+.footer-links a:hover {
+    color: #198754 !important;
+    padding-left: 5px;
+}
+
+.social-links a {
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-background-color: #2f3133;
-    gap: 20px;
-
+    transition: background 0.3s, color 0.3s;
 }
 
-#community{
-    height: 90vh;
-    background-color: antiquewhite;
-    margin-top: 20%;
-
-}
-.Intro>h6{
-    font-size: 80px;
-    align-items: flex-start;
+.social-links a:hover {
+    background-color: #198754;
+    border-color: #198754;
 }
 
+/* Make the newsletter input look sleek in dark mode */
+.footer .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+}
+
+.footer .form-control:focus {
+    border-color: #198754;
+    background-color: #1a1d20;
+}
