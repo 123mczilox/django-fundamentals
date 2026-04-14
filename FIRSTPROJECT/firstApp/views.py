@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 # from django.http import HttpResponse
-from .models import Student, Hobby
-from .forms import StudentForm, HobbyForm
+from .models import Student, Hobby, ChildrenHome
+from .forms import StudentForm, HobbyForm, ChildrenHomeForm
 
 # Create your views here.
 # def home(response):
@@ -15,6 +15,7 @@ from .forms import StudentForm, HobbyForm
 # def contacts(response):
 #     return HttpResponse("FELL FREE TO CONTACT US")
 # contacts(HttpResponse)
+
 
 def home(request):
     context = {"data": "Welcome to Galleon Technologies"}
@@ -44,6 +45,15 @@ def admin(request):
     context = {"data": "Admin panel"}
     return render(request, 'firstApp/admin.html', context)
 
+# ----------------find_homes ---------------
+def find_homes(request):
+    
+    # This grabs EVERY home you've saved in PostgreSQL
+    all_homes = ChildrenHome.objects.all().order_by('-created_at')
+
+    # 3. Send both the Form AND the List to the HTML
+ 
+    return render(request, 'firstApp/find_homes.html', {'homes': all_homes})
 
 
 

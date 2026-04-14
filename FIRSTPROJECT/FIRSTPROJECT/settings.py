@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'FIRSTPROJECT.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'homecare_db',
+        'USER': 'postgres',
+        'PASSWORD': '2727wanjohi',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -120,3 +124,10 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
     "/var/www/static/",
 ]
+import os # Make sure this is imported at the top of your file
+
+# The URL prefix used to access these files in the browser
+MEDIA_URL = '/media/'
+
+# The actual folder on your computer where the files will live
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

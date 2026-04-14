@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from .models import Student, Hobby
+from .models import Student, Hobby , ChildrenHome
 
 
 class StudentForm(ModelForm):
@@ -11,4 +11,10 @@ class StudentForm(ModelForm):
 class HobbyForm(ModelForm):
     class Meta:
         model = Hobby
+        fields = '__all__'
+
+
+class ChildrenHomeForm(ModelForm):
+    class Meta:
+        model = ChildrenHome
         fields = '__all__'

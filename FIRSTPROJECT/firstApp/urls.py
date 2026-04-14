@@ -1,7 +1,11 @@
-from django.urls import path
+from django.urls import path, include
+from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('',views.home, name="home"),
     path('home/',views.home, name="home"),
     path('find_homes/',views.find_homes, name="find_homes"),
@@ -25,3 +29,6 @@ urlpatterns = [
     path('delete-hobby/<str:pk>/', views.deleteHobby, name='delete-hobby'),
 
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
